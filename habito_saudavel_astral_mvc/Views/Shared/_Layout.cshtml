@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>@ViewData["Title"] - habito_saudavel_astral_mvc</title>
+    <title>@ViewData["Title"] Hábito Saudável</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="~/assets/css/main.css" />
     <noscript>
@@ -13,10 +13,11 @@
 <body class="landing is-preload">
     <!-- Page Wrapper -->
     <div id="page-wrapper">
-
         <!-- Header -->
-        <header id="header" class="alt">
-            <h1><a href="index.html">Hábito Saudável</a></h1>
+        <header id="header" class=" col-4 col-12-small">
+
+            <h1><a asp-area="" asp-controller="Home" asp-action="Index" aria-label="Pagina principal">Hábito Saudável</a></h1>
+            
             <nav id="nav">
                 <ul>
                     <li class="special">
@@ -24,10 +25,10 @@
                         <div id="menu">
                             <ul>
                                 <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                                <li><a asp-area="" asp-controller="Home" asp-action="privacy">Privacy</a></li>
-                                <li><a asp-area="" asp-controller="Administrador" asp-action="Cadastro">Cadastro</a></li>
-                                <li><a asp-area="" asp-controller="Administrador" asp-action="login">Login</a></li>
-                                
+                                <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
+                                <li><a asp-area="" asp-controller="Admin" asp-action="Cadastro">Cadastro</a></li>
+                                <li><a asp-area="" asp-controller="Admin" asp-action="Login">Login</a></li>
+                                <li><a asp-area="" asp-controller="Admin" asp-action="Contato">Contato</a></li>                                
                             </ul>
                         </div>
                     </li>

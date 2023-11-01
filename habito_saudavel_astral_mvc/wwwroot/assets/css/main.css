@@ -13,7 +13,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+section, summary, time, mark, audio, video, nav {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -24,7 +24,8 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+	}
 
 body {
 	line-height: 1;
@@ -81,7 +82,7 @@ input, select, textarea {
 		box-sizing: border-box;
 	}
 
-	*, *:before, *:after {
+	*,*:before, *:after {
 		box-sizing: inherit;
 	}
 
@@ -3401,7 +3402,7 @@ input, select, textarea {
 					}
 
 		#menu .close {
-			background-image: url("images/close.svg");
+			background-image: url("../../assets/css/close.svg");
 			background-position: 4.85em 1em;
 			background-repeat: no-repeat;
 			border: 0;
@@ -3472,6 +3473,7 @@ input, select, textarea {
 				display: block;
 				height: inherit;
 				line-height: inherit;
+				
 			}
 
 				@media screen and (max-width: 736px) {
@@ -3488,6 +3490,7 @@ input, select, textarea {
 			position: absolute;
 			right: 0;
 			top: 0;
+			
 		}
 
 			#header nav > ul {
@@ -3518,7 +3521,7 @@ input, select, textarea {
 						}
 
 							#header nav > ul > li > a.menuToggle:after {
-								background-image: url("images/bars.svg");
+								background-image: url("../../assets/images/bars.svg");
 								background-position: right center;
 								background-repeat: no-repeat;
 								content: '';
@@ -3669,7 +3672,7 @@ input, select, textarea {
 		}
 
 			#banner .more:after {
-				background-image: url("images/arrow.svg");
+				background-image: url("../../assets/images/arrow.svg");
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;
