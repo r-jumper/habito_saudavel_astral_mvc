@@ -15,9 +15,7 @@
     <div id="page-wrapper">
         <!-- Header -->
         <header id="header" class=" col-4 col-12-small">
-
-            <h1><a asp-area="" asp-controller="Home" asp-action="Index" aria-label="Pagina principal">Hábito Saudável</a></h1>
-            
+            <h1><a asp-area="" asp-controller="Home" asp-action="Index" aria-label="Pagina principal">Hábito Saudável</a></h1>            
             <nav id="nav">
                 <ul>
                     <li class="special">
@@ -35,6 +33,7 @@
                 </ul>
             </nav>
         </header>
+
         <div class="container">
             <main role="main" class="pb-3">
                 @RenderBody()
@@ -52,7 +51,7 @@
         </ul>
         <ul class="copyright">
             <li>&copy; Hábito Saudável</li>
-            <li><a href="index.html">Home</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
         </ul>
     </footer>
 
@@ -70,5 +69,6 @@
     <script src="~/assets/js/main.js"></script>
     <script src="~/assets/js/autentic.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>
