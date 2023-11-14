@@ -2,7 +2,7 @@
 
 namespace habito_saudavel_astral_mvc.Controllers
 {
-	public class AdministradorController : Controller
+	public class AdminController : Controller
 	{
 		public IActionResult Login()
 		{
@@ -13,9 +13,9 @@ namespace habito_saudavel_astral_mvc.Controllers
 		{
 			return View();
 		}
-		public IActionResult Autentic()
-		{
-			return View();
-		}
-	}
+        public IActionResult Contato()
+        {
+            return View();
+        }
+    }
 }

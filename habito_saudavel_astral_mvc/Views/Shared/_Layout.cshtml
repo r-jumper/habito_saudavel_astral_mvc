@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>@ViewData["Title"] Hábito Saudável</title>
+    <title>@ViewData["Title"] - habito_saudavel_astral_mvc</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="~/assets/css/main.css" />
     <noscript>
@@ -26,8 +26,8 @@
                                 <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                                 <li><a asp-area="" asp-controller="Home" asp-action="privacy">Privacy</a></li>
                                 <li><a asp-area="" asp-controller="Alimentacao" asp-action="Alimentacao">Alimente-se bem</a></li>
-                                <li><a asp-area="" asp-controller="Administrador" asp-action="Cadastro">Cadastro</a></li>
-                                <li><a asp-area="" asp-controller="Administrador" asp-action="login">Login</a></li>
+                                <li><a asp-area="" asp-controller="Admin" asp-action="Cadastro">Cadastro</a></li>
+                                <li><a asp-area="" asp-controller="Admin" asp-action="login">Login</a></li>
                                 
                             </ul>
                         </div>
@@ -35,6 +35,7 @@
                 </ul>
             </nav>
         </header>
+
         <div class="container">
             <main role="main" class="pb-3">
                 @RenderBody()
@@ -70,5 +71,6 @@
     <script src="~/assets/js/main.js"></script>
     <script src="~/assets/js/autentic.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>
