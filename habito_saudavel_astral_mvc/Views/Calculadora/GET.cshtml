@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "_layout_calculadora";
+}
+
+<main>
+    <section id="get" class="containerSection">
+
+        <div class="containerText">
+            <h1>O que é GET ou VET ?</h1>
+            <p>
+                Gasto Energético Total (GET) ou Valor Energético Total (VET), é o cálculo utilizado para identificar
+                as <strong>calorias diárias que o seu corpo necessita</strong>, para isso é necessário saber sua
+                Taxa Metabólica Basal (TMB) e o seu Fator Atividade (FAT).
+            </p>
+        </div>
+
+        <div class="containerCalc">
+            <h2>Calcule seu GET</h2>
+            <h4>Utilize as calculadora de TMB e FAT para obter os dados</h4>
+
+            <div>
+                <h3>TMB</h3>
+                <input id="getTMB" type="number" placeholder="Digite a TMB">
+            </div>
+
+            <div>
+                <h3>FAT</h3>
+                <input id="getFAT" type="number" placeholder="Digite o FAT">
+            </div>
+
+            <button class="button fit" onclick="calcGET()">Calcular</button>
+
+            <div id="resultGET" class="resultCalcs">
+                <!-- Cálculo Inserido pelo JavaScript -->
+            </div>
+
+        </div>
+
+    </section>
+</main>

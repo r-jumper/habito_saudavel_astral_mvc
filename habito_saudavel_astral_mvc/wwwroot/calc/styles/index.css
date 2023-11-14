@@ -1,16 +1,10 @@
 
-
 /* Menu */
-
 
 #menuMobile{
     width: 18.75rem;
     height: 100vh;
 }
-
-
-
-
 
 /* Main */
 main{
@@ -49,6 +43,7 @@ main{
 
 .containerText p{
     line-height: 1.2rem;
+    color: aquamarine
 }
 
 .containerText strong {
@@ -78,7 +73,7 @@ main{
 }
 
 .containerCalc button{
-    margin: 2.5rem auto;
+    margin: 1rem auto;
     cursor: pointer;
 }
 
@@ -90,6 +85,7 @@ main{
 .resultCalcs p {
     font-size: 1.5rem;
     padding: 0 0 2rem 0;
+    color:forestgreen;
 }
 
 .perdarEganho h1{

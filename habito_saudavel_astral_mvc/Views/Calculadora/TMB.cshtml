@@ -1,0 +1,51 @@
+﻿@{
+    Layout = "_layout_calculadora";
+}
+<main>
+    <section id="tmb" class="containerSection">
+
+        <div class="containerText">
+            <h1>O que é TMB ?</h1>
+            <p>
+                A Taxa Metabólica Basal (TMB), é o <strong>
+                    mínimo de calorias necessárias para manter as funções do
+                    organismo em repouso
+                </strong>, como os batimentos cardíacos, a pressão arterial, a respiração e
+                a manutenção da temperatura corporal.
+            </p>
+        </div>
+
+        <div class="containerCalc">
+            <h2>Calcule sua TMB</h2>
+            <h4>Referência utilizada para o Cálculo: FAO,1985</h4>
+            <h3>Faixa Etária</h3>
+            <select id="idade">
+                <option selected value="crianca1">0 - 3 Anos</option>
+                <option value="crianca2">3 - 10 Anos</option>
+                <option value="adolescente">10 - 18 Anos</option>
+                <option value="adulto1">18 - 30 Anos</option>
+                <option value="adulto2">30 - 60 Anos</option>
+                <option value="idoso">&gt 60 Anos</option>
+            </select>
+
+            <h3>Sexo</h3>
+            <select id="sexo">
+                <option value="F">Feminino</option>
+                <option selected value="M">Masculino</option>
+            </select>
+
+            <h3>Peso</h3>
+            <input type="number" id="pesoTMB" step="0.01" placeholder="Peso em Kg">
+
+            <button Class="button fit" onclick="calcTMB()">Calcular</button>
+
+
+            <div id="resultTMB" class="resultCalcs">
+                <!-- Cálculo Inserido pelo JavaScript -->
+            </div>
+
+        </div>
+
+    </section>
+</main>
+    
