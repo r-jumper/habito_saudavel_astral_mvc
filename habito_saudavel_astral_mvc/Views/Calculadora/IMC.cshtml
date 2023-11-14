@@ -1,0 +1,30 @@
+﻿@{
+    Layout = "_layout_calculadora";
+}
+<main>
+    <section id="imc" class="containerSection">
+
+        <div class="containerText">
+            <h1>O que é IMC ?</h1>
+            <p>O Índice de Massa Corporal (IMC), é um cálculo simples, fácil e rápido adotado pela Organização Mundial da Saúde (OMS) como referência internacional de obesidade, o seu resultado tem o objetivo mostra a <strong>avaliação do nível de gordura corporal</strong> de cada pessoa.</p>
+            <p><strong>Atenção: </strong>O resultado <strong>não é exato</strong>, ele serve como parâmetro de avaliação rápida, pois uma pessoa com alto percentual de massa magra pode apresentar "sobrepeso", e físicamente ela está saudável. Portanto, para uma avaliação exata é necessário um exame físico.</p>
+        </div>
+
+        <div class="containerCalc">
+            <h2>Calcule seu IMC</h2>
+            <h3>Peso</h3>
+            <input type="number" id="peso" step="0.01" placeholder="Peso em Kg">
+
+            <h3>Altura</h3>
+            <input type="number" id="altura" step="0.01" placeholder="Altura em Metros">
+
+            <button onclick="calcIMC()">Calcular</button>
+
+            <div id="resultIMC" class="resultCalcs">
+                <!-- Cálculo Inserido pelo JavaScript -->
+            </div>
+
+        </div>
+
+    </section>
+</main>
