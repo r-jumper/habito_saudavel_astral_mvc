@@ -13,7 +13,7 @@
 				A sincronia entre mente e corpo é o caminho<br /> para uma saúde plena e uma vida equilibrada.
 			</p>
 			<ul class="actions special">
-				<li><a asp-controller="Administrador" asp-action="Login" class="button primary">Conecte-se</a></li>
+				<li><a asp-controller="Admin" asp-action="Login" class="button primary">Conecte-se</a></li>
 			</ul>
 		</div>
 		<a href="#one" class="more scrolly">Continue</a>
@@ -146,8 +146,8 @@
 				<p>Entre para obter dias personalizadas.</p>
 			</header>
 			<ul class="actions stacked">
-				<li><a href="login.html" class="button fit primary">Conecte-se</a></li>
-				<li><a href="contato.html" class="button fit">Contate-nos</a></li>
+				<li><a asp-controller="Admin" asp-action="Login" class="button fit primary">Conecte-se</a></li>
+				<li><a asp-controller="Admin" asp-action="Contato" class="button fit">Contate-nos</a></li>
 			</ul>
 		</div>
 	</section>	
