@@ -1,0 +1,160 @@
+﻿@{
+    Layout = "_layout_alimentacao";
+}
+<head>
+    <link rel="stylesheet" type="text/css" media="all" href="~/dist/css/main.min.css">
+</head>
+
+<section class="main-container">
+
+	<section class="container-fluid como-montar-page" id="alimente-se-bem">
+		<div class="container" id="top">
+			
+			<div class="como-montar-title">
+				<h1 class="text-center">Monte refeições equilibradas</h1>
+				<h3 class="text-center text-red">(Para o almoço e jantar)</h3>
+			</div>
+		</div>
+
+		<div class="container" id="content">
+			<div class="space-h-20 text-center">
+				<span class="btn-click-red-big">CLIQUE NOS ÍCONES ABAIXO E SAIBA COMO:</span>
+			</div>
+			<div class="img-kachimeshi text-center" id="img-kachimeshi">
+
+				<div class="only-desk">
+					<img src="~/dist/images/alimente-se-bem/kashimeshi.png" class="img-main" usemap="#image-map"
+						 alt="prato com alimentosseparados" title="refeições equilibradas" />
+				</div>
+				<div class="only-mobile">
+					<img src="~/dist/images/alimente-se-bem/kashimeshi-table-mobile.jpg" class="img-main"
+						 usemap="#image-map1" alt="Kashimeshi" title="Kashimeshi" />
+					<map name="image-map1">
+						<area target="" data-modal="frutas" alt="frutas" title="frutas" href="#"
+							  coords="175,332,50,408,37,449,72,495,48,515,30,550,40,598,66,612,96,620,116,616,142,600,159,630,177,651,213,655,265,626,334,579,346,543,211,339"
+							  shape="poly">
+						<area target="" data-modal="verduras-legumes" alt="verduras-legumes"
+							  title="verduras-legumes" href="#"
+							  coords="489,76,490,552,374,515,288,418,259,309,219,307,180,279,169,231,200,185,252,174,289,205,333,148,404,89"
+							  shape="poly">
+						<area target="" data-modal="cerais-tuberculos" alt="cerais-tuberculos"
+							  title="cerais-tuberculos" href="#"
+							  coords="493,63,547,80,573,84,617,100,652,125,663,80,709,46,760,48,807,88,806,145,770,193,722,200,739,256,745,306,493,312"
+							  shape="poly">
+						<area target="" data-modal="carnes-ovos" alt="carnes-ovos" title="carnes-ovos" href="#"
+							  coords="491,311,494,549,555,545,595,531,635,511,653,499,680,523,716,537,759,524,784,487,791,446,765,398,734,388,748,311"
+							  shape="poly">
+					</map>
+				</div>
+
+				<img src="~/dist/images/alimente-se-bem/frutas.png" class="img-alimento frutas"
+					 data-modal="frutas" alt="Frutas" title="Frutas" />
+				<img src="~/dist/images/alimente-se-bem/verduras-e-legumes.png"
+					 class="img-alimento verduras-legumes" data-modal="verduras-legumes" alt="Verduras e legumes"
+					 title="Verduras e legumes" />
+				<img src="~/dist/images/alimente-se-bem/cereais-e-tuberculos.png"
+					 class="img-alimento cerais-tuberculos" data-modal="cerais-tuberculos" alt="Cerais tuberculos"
+					 title="Cerais tuberculos" />
+				<img src="~/dist/images/alimente-se-bem/carnes-ovos-leguminosos.png"
+					 class="img-alimento carnes-ovos" data-modal="carnes-ovos" alt="Carnes e ovos"
+					 title="Carnes e ovos" />
+
+
+				<!-- frutas -->
+				<div class="modal-default" id="frutas">
+					<div class="close-modal">X</div>
+					<div class="modal-content">
+						<div class="image-modal">
+							<img src="~/dist/images/alimente-se-bem/frutas-big.png" alt="frutas" title="frutas" />
+						</div>
+					</div>
+				</div>
+
+				<!-- verduras-legumes -->
+				<div class="modal-default" id="verduras-legumes">
+					<div class="close-modal">X</div>
+					<div class="modal-content">
+						<div class="image-modal">
+							<img src="~/dist/images/alimente-se-bem/verduras-e-legumes-big.png"
+								 alt="verduras e legumes" title="verduras e legumes" />
+						</div>
+					</div>
+				</div>
+
+				<!-- cerais-tuberculos -->
+				<div class="modal-default" id="cerais-tuberculos">
+					<div class="close-modal">X</div>
+					<div class="modal-content">
+						<div class="image-modal">
+							<img src="~/dist/images/alimente-se-bem/cereais-e-tuberculos-big.png"
+								 alt="cereais e tuberculos" title="cereais e tuberculos" />
+						</div>
+					</div>
+				</div>
+
+				<!-- carnes-ovos -->
+				<div class="modal-default" id="carnes-ovos">
+					<div class="close-modal">X</div>
+					<div class="modal-content">
+						<div class="image-modal">
+							<img src="~/dist/images/alimente-se-bem/carnes-ovos-leguminosos-big.png"
+								 alt="carnes, ovos e leguminosos" title="carnes, ovos e leguminosos" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="space-h-30 text-center">
+				<a asp-controller="Alimentacao" asp-action="Receitas" class="btn-back-top btn-red-large">Confira sugestões de receitas aqui</a>
+			</div>
+			<div class="space-h-30 text-center">
+				<a asp-controller="Home" asp-action="Index" class="btn-back-top btn-red-large">VOLTAR</a>
+			</div>
+
+		</div>
+	</section>
+</section>
+
+<body>
+	<script src="~/dist/js/jquery.min.js"></script>
+	<script src="~/dist/js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="~/dist/js/imageMapResizer.min.js"></script>
+	<script src="~/dist/js/main.min.js"></script>
+
+	<script>
+		function goBack() {
+			window.history.back();
+		}
+		$(document).ready(function () {
+			function openModal() {
+				$('[data-modal]').unbind('click').on('click', function (e) {
+					e.preventDefault();
+					var openModal = $(this).attr("data-modal");
+
+					if ($('#' + openModal).hasClass('open-modal')) {
+						$('#' + openModal).removeClass('open-modal');
+					} else {
+						$('#' + openModal).addClass('open-modal');
+					}
+				});
+			}
+
+			function closeModal() {
+				$('.close-modal').unbind('click').on('click', function (e) {
+					if ($(this).parent().hasClass('open-modal')) {
+						$(this).parent().removeClass('open-modal');
+					}
+				});
+
+				$('.modal-default').unbind('click').on('click', function (e) {
+					$('.modal-default').removeClass('open-modal');
+				});
+			}
+
+			$('map').imageMapResize();
+
+			openModal();
+			closeModal();
+		});
+	</script>
+</body>

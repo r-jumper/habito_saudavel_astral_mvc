@@ -1,0 +1,73 @@
+/* Raleway Regular, Italic, Bold */
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway/raleway-regular.eot');
+    src: url('Raleway/raleway-regulard41d.eot?#iefix') format('embedded-opentype'),
+         url('Raleway/raleway-regular.woff2') format('woff2'),
+         url('Raleway/raleway-regular.woff') format('woff'),
+         url('Raleway/raleway-regular.ttf') format('truetype'),
+         url('Raleway/raleway-regular.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway/raleway-italic.eot');
+    src: url('Raleway/raleway-italicd41d.eot?#iefix') format('embedded-opentype'),
+         url('Raleway/raleway-italic.woff2') format('woff2'),
+         url('Raleway/raleway-italic.woff') format('woff'),
+         url('Raleway/raleway-italic.ttf') format('truetype'),
+         url('Raleway/raleway-italic.svg#ralewayitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway/raleway-semibold.eot');
+    src: url('Raleway/raleway-semiboldd41d.eot?#iefix') format('embedded-opentype'),
+         url('Raleway/raleway-semibold.woff2') format('woff2'),
+         url('Raleway/raleway-semibold.woff') format('woff'),
+         url('Raleway/raleway-semibold.ttf') format('truetype'),
+         url('Raleway/raleway-semibold.svg#ralewaysemibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway/raleway-semibolditalic.eot');
+    src: url('Raleway/raleway-semibolditalicd41d.eot?#iefix') format('embedded-opentype'),
+         url('Raleway/raleway-semibolditalic.woff2') format('woff2'),
+         url('Raleway/raleway-semibolditalic.woff') format('woff'),
+         url('Raleway/raleway-semibolditalic.ttf') format('truetype'),
+         url('Raleway/raleway-semibolditalic.svg#ralewaysemibold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway/raleway-bold.eot');
+    src: url('Raleway/raleway-boldd41d.eot?#iefix') format('embedded-opentype'),
+         url('Raleway/raleway-bold.woff2') format('woff2'),
+         url('Raleway/raleway-bold.woff') format('woff'),
+         url('Raleway/raleway-bold.ttf') format('truetype'),
+         url('Raleway/raleway-bold.svg#ralewaybold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Bitter Italic */
+@font-face {
+    font-family: 'Bitter';
+    src: url('Bitter/bitter-italic.eot');
+    src: url('Bitter/bitter-italicd41d.eot?#iefix') format('embedded-opentype'),
+         url('Bitter/bitter-italic.woff2') format('woff2'),
+         url('Bitter/bitter-italic.woff') format('woff'),
+         url('Bitter/bitter-italic.ttf') format('truetype'),
+         url('Bitter/bitter-italic.svg#bitteritalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}

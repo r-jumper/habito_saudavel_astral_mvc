@@ -1,0 +1,75 @@
+﻿
+@{
+    Layout = "_layout_alimentacao";
+}
+<head>
+	<link rel="stylesheet" type="text/css" media="all" href="~/dist/css/main.min.css">
+</head>
+
+<section id="three" class="wrapper style3 special">
+	<div class="inner">
+		<div class="major">
+			<div class="title space-h-20">
+				<h1 class="text-center text-red">Receitas para uma vida mais equilibrada</h1>
+				<h3 class="space-h-20">
+					Veja receitas práticas, saborosas e equilibradas para os vários momentos do dia.
+				</h3>
+			</div>
+		</div>
+
+		<ul class="features">
+			<li class="icon fa-paper-plane">
+				<h2 class="card-format">
+					<a href="dia-a-dia-nutritivo.html"
+					   onclick="_gaq.push(['_trackEvent', 'Alimente-se bem', 'Home', 'dia-a-dia-nutritivo']);">
+						DIA	A DIA NUTRITIVO
+					</a>
+				</h2>
+			</li>
+			<li class="icon solid fa-laptop">
+				<h2 class="card-format">
+					<a href="para-o-jantar.html"
+					   onclick="_gaq.push(['_trackEvent', 'Alimente-se bem', 'Home', 'para-o-jantar']);">
+						PARA O	JANTAR
+					</a>
+				</h2>
+			</li>
+			<li class="icon solid fa-code">
+				<h2 class="card-format">
+					<a href="para-compartilhar.html"
+					   onclick="_gaq.push(['_trackEvent', 'Alimente-se bem', 'Home', 'para-compartilhar']);">
+						PARA COMPARTILHAR
+					</a>
+				</h2>
+			</li>
+			<li class="icon solid fa-headphones-alt">
+				<h2 class="card-format">
+					<a href="para-a-sobremesa.html"
+					   onclick="_gaq.push(['_trackEvent', 'Alimente-se bem', 'Home', 'para-a-sobremesa']);">
+						PARA	A SOBREMESA
+					</a>
+				</h2>
+			</li>
+			<!--<li class="icon fa-heart">
+				<h3>
+					Defina intensidade e duração, e acompanhe seu tempo ativo, calorias queimadas e batimento
+					cardíaco com facilidade.
+				</h3>
+				<p></p>
+			</li>
+			<li class="icon fa-flag">
+				<h3>Compartilhe suas atividades com amigos de forma divertida.</h3>
+				<p></p>
+			</li>-->
+		</ul>
+
+		<div class="space-h-30 text-center">
+			<a asp-controller="Home" asp-action="Index" class="button fit">VOLTAR</a> 
+		</div>
+
+	</div>
+
+</section>
+
+
+

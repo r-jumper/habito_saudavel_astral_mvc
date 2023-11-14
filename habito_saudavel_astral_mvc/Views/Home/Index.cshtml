@@ -13,7 +13,7 @@
 				A sincronia entre mente e corpo é o caminho<br /> para uma saúde plena e uma vida equilibrada.
 			</p>
 			<ul class="actions special">
-				<li><a href="login.html" class="button primary">Conecte-se</a></li>
+				<li><a asp-controller="Administrador" asp-action="Login" class="button primary">Conecte-se</a></li>
 			</ul>
 		</div>
 		<a href="#one" class="more scrolly">Continue</a>
@@ -42,40 +42,36 @@
 		<section class="spotlight">
 			<div class="image"><img src="images/pic01.jpg" alt="" /></div>
 			<div class="content">
-				<h2>
-					Magna primis lobortis<br />
-					sed ullamcorper
-				</h2>
-				<p>
-					Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla
-					nullam aenean mi ligula.
-				</p>
+				<div >
+					<h2 class="card-format"> Receitas equilibradas</h2>
+					<h4>
+						Veja receitas práticas, saborosas e equilibradas para os vários momentos do dia.
+					</h4>
+					<a asp-controller="Alimentacao" asp-action="Receitas" class="button fit">IR PARA RECEITAS</a>
+				</div>
 			</div>
 		</section>
 		<section class="spotlight">
 			<div class="image"><img src="images/pic02.jpg" alt="" /></div>
-			<div class="content">
-				<h2>
-					Tortor dolore feugiat<br />
-					elementum magna
-				</h2>
-				<p>
-					Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla
-					nullam aenean mi ligula.
-				</p>
-			</div>
+				<div class="content">
+					<h2 class="card-format">Grupos Alimentares</h2>
+					<h4>
+						Os alimentos podem ser divididos em 7 grupos alimentares com nutrientes específicos em cada um
+						deles.
+					</h4>
+					<a asp-controller="Alimentacao" asp-action="Grupos" class="button fit">SAIBA MAIS</a>
+				</div>
 		</section>
 		<section class="spotlight">
 			<div class="image"><img src="images/pic03.jpg" alt="" /></div>
 			<div class="content">
-				<h2>
-					Augue eleifend aliquet<br />
-					sed condimentum
-				</h2>
-				<p>
-					Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla
-					nullam aenean mi ligula.
-				</p>
+				
+				<h2>Refeições equilibradas</h2>
+				
+				<h4>
+					Como montar refeições equilibradas para seu almoço e jantar
+				</h4>
+				<a asp-controller="Alimentacao" asp-action="Refeicoes" class="button fit">SAIBA COMO</a>
 			</div>
 		</section>
 	</section>
@@ -84,27 +80,48 @@
 	<section id="three" class="wrapper style3 special">
 		<div class="inner">
 			<header class="major">
-				<h2>Acompanhe suas atividades diárias</h2>
-				<p>A sincronia entre mente e corpo é o caminho para uma saúde plena e uma vida equilibrada.</p>
+				<div class="title space-h-20">
+					<h1 class="text-center text-red">Receitas para uma vida mais equilibrada</h1>
+					<p class="space-h-20">
+						Veja receitas práticas, saborosas e equilibradas para os vários momentos do dia.
+					</p>
+				</div>
 			</header>
+		
 			<ul class="features">
 				<li class="icon fa-paper-plane">
-					<h3>Encontre sugestões de pratos personalizados para seus objetivos.</h3>
-					<p></p>
+					<h2 class="card-format">
+						<a href="dia-a-dia-nutritivo.html"
+						   onclick="_gaq.push(['_trackEvent', 'Alimente-se bem', 'Home', 'dia-a-dia-nutritivo']);">
+							DIA	A DIA NUTRITIVO
+						</a>
+					</h2>
 				</li>
 				<li class="icon solid fa-laptop">
-					<h3>Descubra seu IMC agora e monitore sua evolução.</h3>
-					<p></p>
+					<h2 class="card-format">
+						<a href="para-o-jantar.html"
+						   onclick="_gaq.push(['_trackEvent', 'Alimente-se bem', 'Home', 'para-o-jantar']);">
+							PARA O	JANTAR
+						</a>
+					</h2>
 				</li>
 				<li class="icon solid fa-code">
-					<h3>monitora sua meta de calorias diárias</h3>
-					<p></p>
+					<h2 class="card-format">
+						<a href="para-compartilhar.html"
+						   onclick="_gaq.push(['_trackEvent', 'Alimente-se bem', 'Home', 'para-compartilhar']);">
+							PARA COMPARTILHAR
+						</a>
+					</h2>
 				</li>
 				<li class="icon solid fa-headphones-alt">
-					<h3>Faça escolhas inteligentes nas suas refeições e defina sua meta diária de calorias.</h3>
-					<p></p>
+					<h2 class="card-format">
+						<a href="para-a-sobremesa.html"
+						   onclick="_gaq.push(['_trackEvent', 'Alimente-se bem', 'Home', 'para-a-sobremesa']);">
+							PARA	A SOBREMESA
+						</a>
+					</h2>
 				</li>
-				<li class="icon fa-heart">
+				<!--<li class="icon fa-heart">
 					<h3>
 						Defina intensidade e duração, e acompanhe seu tempo ativo, calorias queimadas e batimento
 						cardíaco com facilidade.
@@ -114,21 +131,23 @@
 				<li class="icon fa-flag">
 					<h3>Compartilhe suas atividades com amigos de forma divertida.</h3>
 					<p></p>
-				</li>
+				</li>-->
 			</ul>
+			
 		</div>
+		
 	</section>
 
 	<!-- CTA -->
 	<section id="cta" class="wrapper style4">
 		<div class="inner">
 			<header>
-				<h3>Hábitos Saudáveis para uma Vida em Equilíbrio</h3>
-				<p>Descubra seu IMC, monitore sua evolução.</p>
+				<h3>Hábitos Saudáveis <br />para uma Vida em Equilíbrio</h3>
+				<p>Entre para obter dias personalizadas.</p>
 			</header>
 			<ul class="actions stacked">
-				<li><a href="login.html" class="button fit primary">Conecte-se</a></li>
-				<li><a href="contato.html" class="button fit">Contate-nos</a></li>
+				<li><a asp-controller="Administrador" asp-action="Login" class="button fit primary">Conecte-se</a></li>
+				<li><a asp-controller="Administrador" asp-action="Contato" class="button fit">Contate-nos</a></li>
 			</ul>
 		</div>
 	</section>	
