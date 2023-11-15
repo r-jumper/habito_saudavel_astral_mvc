@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] Receitas para o dia nutritivo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="~/assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="~/assets/css/noscript.css" />
+    </noscript>
+    
+</head>
+<body class="landing is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header" class="alt">
+            <h1><a href="index.html">Hábito Saudável</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle" aria-label="Barra de Navegação"><span>Menu</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                                <li><a asp-area="" asp-controller="Receitas" asp-action="Manha">Café da manhã</a></li>
+                                <li><a asp-area="" asp-controller="Receitas" asp-action="Almoco">Almoço</a></li>
+                                <li><a asp-area="" asp-controller="Receitas" asp-action="Lanche">Lanche</a></li>
+                                <li><a asp-area="" asp-controller="Receitas" asp-action="Jantar">Jantar</a></li>
+                                <li><a asp-area="" asp-controller="Receitas" asp-action="Nutritivo">Dia nutritivo</a></li>
+                                <li><a asp-area="" asp-controller="Receitas" asp-action="Sobremesa">Sobremesa</a></li>
+
+                                
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+        <ul class="icons">
+            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon brands fa-dribbble"><span class="label">linkeIn</span></a></li>
+            <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; Hábito Saudável</li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="~/assets/js/jquery.min.js"></script>
+    <script src="~/assets/js/jquery.scrollex.min.js"></script>
+    <script src="~/assets/js/jquery.scrolly.min.js"></script>
+    <script src="~/assets/js/browser.min.js"></script>
+    <script src="~/assets/js/breakpoints.min.js"></script>
+    <script src="~/assets/js/util.js"></script>
+    <script src="~/assets/js/main.js"></script>
+    
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

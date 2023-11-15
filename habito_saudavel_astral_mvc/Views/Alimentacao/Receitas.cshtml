@@ -1,6 +1,6 @@
 ﻿
 @{
-    
+	Layout = "_layout_receitas";
 }
 <head>
 	<link rel="stylesheet" type="text/css" media="all" href="~/dist/css/main.min.css">
@@ -18,19 +18,11 @@
 		</div>
 
 		<ul class="features">
-			<li class="icon fa-paper-plane">
-				<h2 class="card-format">
-					<a href="dia-a-dia-nutritivo.html"
-					   onclick="_gaq.push(['_trackEvent', 'Alimente-se bem', 'Home', 'dia-a-dia-nutritivo']);">
-						DIA	A DIA NUTRITIVO
-					</a>
-				</h2>
-			</li>
 			<li class="icon solid fa-laptop">
 				<h2 class="card-format">
 					<a href="para-o-jantar.html"
 					   onclick="_gaq.push(['_trackEvent', 'Alimente-se bem', 'Home', 'para-o-jantar']);">
-						PARA O	JANTAR
+						PARA O CAFÉ DA MANHÃ
 					</a>
 				</h2>
 			</li>
@@ -38,7 +30,29 @@
 				<h2 class="card-format">
 					<a href="para-compartilhar.html"
 					   onclick="_gaq.push(['_trackEvent', 'Alimente-se bem', 'Home', 'para-compartilhar']);">
-						PARA COMPARTILHAR
+						PARA O ALMOÇO
+					</a>
+				</h2>
+			</li>
+			<li class="icon solid fa-code">
+				<h2 class="card-format">
+					<a href="para-compartilhar.html"
+					   onclick="_gaq.push(['_trackEvent', 'Alimente-se bem', 'Home', 'para-compartilhar']);">
+						PARA O LANCHE
+					</a>
+				</h2>
+			</li>
+			<li class="icon solid fa-laptop">
+				<h2 class="card-format">
+					<a a asp-area="" asp-controller="Receitas" asp-action="Jantar">PARA O	JANTAR</a>
+				</h2>
+			</li>			
+			
+			<li class="icon fa-paper-plane">
+				<h2 class="card-format">
+					<a href="dia-a-dia-nutritivo.html"
+					   onclick="_gaq.push(['_trackEvent', 'Alimente-se bem', 'Home', 'dia-a-dia-nutritivo']);">
+						DIA	A DIA NUTRITIVO
 					</a>
 				</h2>
 			</li>

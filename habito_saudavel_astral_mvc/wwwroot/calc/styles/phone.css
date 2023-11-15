@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@media only screen and (max-width: 1024px) {
+    
+    #part02 {
+        flex-basis: 60%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+   
+
+    #part02 {
+        flex-basis: 70%;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    
+
+    #part02 {
+        flex-basis: 75%;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    
+
+    #part02 {
+        flex-basis: 80%;
+    }
+
+    #part02 #calculator {
+        max-width: 370px;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    #main {
+        flex-direction: column;
+    }
+
+    
+}
+
+@media only screen and (max-width: 380px) {
+    #part02 #calculator {
+        max-width: 320px;
+    }
+}

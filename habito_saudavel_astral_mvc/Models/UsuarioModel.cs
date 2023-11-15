@@ -1,8 +1,6 @@
-﻿using habito_saudavel_astral_mvc.Enums;
-
-namespace habito_saudavel_astral_mvc.Models
+﻿namespace habito_saudavel_astral_mvc.Models
 {
-	public class Usuario
+    public class Usuario
 	{
 		public int Id { get; set; }
 
@@ -17,7 +15,6 @@ namespace habito_saudavel_astral_mvc.Models
 
 		public DateTime? DataDeAlteracao { get; set;}
 
-		public PerfilEnum Perfil { get; set;}
 
 		
 	}

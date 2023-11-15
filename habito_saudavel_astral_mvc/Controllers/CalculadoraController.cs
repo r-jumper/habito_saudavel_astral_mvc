@@ -24,5 +24,9 @@ namespace habito_saudavel_astral_mvc.Controllers
 		{
 			return View();
 		}
-	}
+        public IActionResult Macro()
+        {
+            return View();
+        }
+    }
 }
