@@ -6,11 +6,11 @@ namespace habito_saudavel_astral_mvc.Models
 	{
 		public int Id { get; set; }
 
-		public string Nome { get; set; }
+		public string Name { get; set; }
 
 		public string Login { get; set;}
 		
-        public String Email { get; internal set; }
+        public string Email { get; set; }
         public string Senha { get; set;}
 
 		public DateTime DataDeCadastro { get; set;}

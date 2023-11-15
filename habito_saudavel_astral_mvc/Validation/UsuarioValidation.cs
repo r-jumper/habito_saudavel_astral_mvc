@@ -8,7 +8,7 @@ namespace habito_saudavel_astral_mvc.Validation
     {
         public UsuarioValidator() {
             RuleFor(Usuario => Usuario.Id).NotNull();
-            RuleFor(Usuario => Usuario.Nome).Length(0, 10);
+            RuleFor(Usuario => Usuario.Name).NotNull();
             RuleFor(Usuario => Usuario.Email).EmailAddress();
             RuleFor(Usuario => Usuario.Senha).NotNull();
 
