@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "_layout_calculadora";
+}
+
+<main>
+    <section id="h2o" class="containerSection">
+
+        <div class="containerText">
+            <h1>Ingestão Hídrica?</h1>
+            <p>
+                Sabemos que o corpo humano é composto por certa de 70% de água, portanto a ingestão correta da
+                quantidade água que o nosso corpo necessita é de extrema importância, pois ela traz benefícios a
+                saúde, auxiliando o corpo filtrar as sujidades, regular processos bioquímicos e outros relacionados
+                com a temperatura, transportando ainda substâncias.
+            </p>
+            <br>
+            <p>
+                <strong>Lembre-se:</strong> Tudo em excesso é prejudicial, e consumir mais água do que o indicado
+                pode ter efeitos negativos a saúde, principalmente para quem tem doenças cardíacas ou renais, pois o
+                organismo não consegue eliminar o excesso de água, podendo provocar inchaço no corpo todo,
+                dificuldade para respirar, aumento da pressão arterial, desequilíbrio dos minerais na corrente
+                sanguínea e sobrecarga dos rins.
+            </p>
+        </div>
+
+        <div class="containerCalc">
+            <h2>Calcule sua Ingestão Hídrica</h2>
+            <h4>Referência utilizada para o Cálculo: 35ml/Kg</h4>
+
+            <h3>Peso</h3>
+            <input type="number" id="pesoH2O" step="0.01" placeholder="Peso em Kg">
+            <button class="button fit" onclick="calcH2O()">Calcular</button>
+
+            <div id="resultH2O" class="resultCalcs">
+                <!-- Cálculo Inserido pelo JavaScript -->
+            </div>
+        </div>
+
+    </section>
+</main>
