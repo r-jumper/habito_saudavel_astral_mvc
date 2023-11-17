@@ -5,6 +5,10 @@
     <title>@ViewData["Title"]- Habito Saudável</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="~/assets/css/main.css" />
+    <link rel="stylesheet" href="~/acessib/css/contraste.css">
+    <link rel="stylesheet" type="text/css" href="~/acessib/css/main.css">
+
+
     <noscript>
         <link rel="stylesheet" href="~/assets/css/noscript.css" />
     </noscript>
@@ -17,7 +21,38 @@
         <!-- Header -->
         <header id="header" class="alt">
             <h1><a href="index.html">Hábito Saudável</a></h1>
+
             <nav id="nav">
+                <div id="inst-bar" style="display: block;" align="center">
+                    <div class="container" align="center">
+                        <ul id="accessibility" class="pull-left" align="center" style="font-size: 20px", ="align-items: center;">
+                           
+                            <li class="opt-icon opt-contrast">
+                                <a href="#" accesskey="1" title="Mudar o contraste - atalho ALT+1">
+                                    <i class="fa fa-adjust" ,"opt-icon opt-contrast" id="altocontraste"
+                                       onclick="window.toggleContrast()" onkeydown="window.toggleContrast()" ,="1"
+                                       accesskey="1">☀</i>
+                                    <span>Contraste ALT+1</span>
+                                </a>
+                            </li>
+                            <li class="opt-icon opt-increase-text">
+                                <a href="#" accesskey="2" title="Diminuir o Tamanho do Texto ALT+2">
+                                    <i class="fa fa-font" aria-hidden="true" name="decrease-font" id="decrease-font"
+                                       accesskey="2">A-</i><i class="fa fa-plus" aria-hidden="true"></i>
+                                    <span>Diminuir o texto ALT+2</span>
+                                </a>
+                            </li>
+                            <li class="opt-icon opt-normal-text">
+                                <a href="#" accesskey="3" title="Aumentar o Tamanho do Texto - ALT+3">
+                                    <i class="fa fa-font" aria-hidden="true" name="increase-font" id="increase-font"
+                                       accesskey="3">A+</i>
+                                    <span>Aumentar o texto ALT+3</span>
+                                </a>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+
                 <ul>
                     <li class="special">
                         <a href="#menu" class="menuToggle" aria-label="Barra de Navegação"><span>Menu</span></a>
@@ -32,10 +67,12 @@
                         </div>
                     </li>
                 </ul>
+
             </nav>
         </header>
 
         <div class="container">
+
             <main role="main" class="pb-3">
                 @RenderBody()
             </main>
@@ -68,7 +105,11 @@
     <script src="~/assets/js/breakpoints.min.js"></script>
     <script src="~/assets/js/util.js"></script>
     <script src="~/assets/js/main.js"></script>
-    <script src="~/assets/js/autentic.js"></script>
+    <script type="text/javascript" src="~/acessib/js/contraste.js"></script>
+    <script type="text/javascript" src="~/acessib/js/cookie.js"></script>
+    <script type="text/javascript" src="~/acessib/js/script.js"></script>
+
+
     @await RenderSectionAsync("Scripts", required: false)
 
 </body>
