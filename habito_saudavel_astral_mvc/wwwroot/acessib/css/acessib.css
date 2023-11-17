@@ -1,9 +1,13 @@
 #inst-bar {
     font-size: 16px;
     display: block;
-    height: 2rem;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$cor-bg-inst-bar-prin', endColorstr='$cor-bg-inst-bar-secun',)
+    /*height: 2rem;
+    background:#eee;
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(71%,#eee),to(#e8e8e8));
+    background:linear-gradient(to bottom,#eee 71%,#e8e8e8 100%);*/
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$cor-bg-inst-bar-prin', endColorstr='$cor-bg-inst-bar-secun', GradientType=0 );
 }
+    
 
 @media (max-width:767px) {
     #inst-bar {
@@ -14,6 +18,8 @@
 #inst-bar .container {
     position: relative;
     padding-right: 0;
+    font-size: 20px;
+    align-items: center;
 }
 
 #inst-bar ul #accessibility {

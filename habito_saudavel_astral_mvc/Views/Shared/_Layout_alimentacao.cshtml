@@ -5,6 +5,8 @@
     <title>@ViewData["Title"] - Habito Saudável</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="~/assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="~/acessib/css/acessib.css">
+
     <noscript>
         <link rel="stylesheet" href="~/assets/css/noscript.css" />
     </noscript>
@@ -16,7 +18,6 @@
 
         <!-- Header -->
         <header id="header" class="alt">
-            <h1><a href="index.html">Hábito Saudável</a></h1>
             <nav id="nav">
                 <ul>
                     <li class="special">
@@ -32,6 +33,42 @@
                         </div>
                     </li>
                 </ul>
+                <div id="inst-bar">
+                    <div class="container">
+                        <ul id="accessibility" class="pull-left" align="left">
+
+                            <li class="opt-icon opt-contrast">
+                                <a href="#" accesskey="1" title="Mudar o contraste ALT+1">
+                                    <i class="fa fa-adjust" opt-icon opt-contrast" id="altocontraste"
+                                       onclick="window.toggleContrast()" onkeydown="window.toggleContrast()" ,="1"
+                                       accesskey="1">☀</i>
+                                    <!--<span>Contraste ALT+1</span>-->
+                                </a>
+                            </li>
+                            <li class="opt-icon opt-increase-text">
+                                <a href="#" accesskey="2" title="Diminuir o Tamanho do Texto ALT+2">
+                                    <i class="fa fa-font" aria-hidden="true" name="decrease-font" id="decrease-font"
+                                       accesskey="2">A-</i>
+                                    <!--<span>Diminuir o texto ALT+2</span>-->
+                                </a>
+                            </li>
+                            <li class="opt-icon opt-increase-text">
+                                <a href="#" accesskey="3" title="Aumentar o Tamanho do Texto ALT+3">
+                                    <i class="fa fa-font" aria-hidden="true" name="increase-font" id="increase-font"
+                                       accesskey="3">A+</i>
+                                    <!--<span>Aumentar o texto ALT+3</span>-->
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div vw class="enabled">
+                    <div vw-access-button class="active"></div>
+                    <div vw-plugin-wrapper>
+                        <div class="vw-plugin-top-wrapper"></div>
+                    </div>
+                </div>
+                
             </nav>
         </header>
         <div class="container">
@@ -67,7 +104,19 @@
     <script src="~/assets/js/breakpoints.min.js"></script>
     <script src="~/assets/js/util.js"></script>
     <script src="~/assets/js/main.js"></script>
-    <script src="~/assets/js/autentic.js"></script>
+    <script type="text/javascript" src="~/acessib/js/contraste.js"></script>
+    <script type="text/javascript" src="~/acessib/js/cookie.js"></script>
+    <script type="text/javascript" src="~/acessib/js/script.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget({
+            rootPah: '/app',
+            personalization: 'https://vlibras.gov.br/config/default_logo.json',
+            opacity: 0.5,
+            position: 'L',
+            avatar: 'random',
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
