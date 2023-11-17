@@ -12,7 +12,7 @@ namespace habito_saudavel_astral_mvc.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Sobre()
         {
             return View();
         }

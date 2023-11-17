@@ -102,7 +102,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		/* color: #fff; */
+		color: #fff; 
 		font-family: "Open Sans", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 400;
@@ -2481,6 +2481,8 @@ input, select, textarea {
 		button.large,
 		.button.large {
 			font-size: 1.35em;
+			background-color: #21b2a6;
+			color: #ffffff !important;
 		}
 
 		input[type="submit"].primary,
@@ -2977,7 +2979,7 @@ input, select, textarea {
 			}
 
 		.wrapper.style2 {
-			background-color: #2e3842;
+			/*background-color: #2e3842;*/
 		}
 
 		.wrapper.style3 {
@@ -3988,13 +3990,7 @@ body.landing #page-wrapper {
 
 body.is-mobile.landing #banner,
 body.is-mobile.landing .wrapper.style4 {
-	background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/banner.jpg");
-	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/banner.jpg");
-	background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/banner.jpg");
-	background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/banner.jpg");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	
 }
 
 	body.is-mobile.landing #footer {
