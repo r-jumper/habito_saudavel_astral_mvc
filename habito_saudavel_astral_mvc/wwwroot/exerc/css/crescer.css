@@ -5,6 +5,7 @@ button {
 }
 
 body {
+
     margin: 0;
     padding: 0;
     font-family: 'Orienta';
@@ -14,15 +15,7 @@ body {
 }
 
 
-.hello {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  color: #ffffff;
-  font-weight: 300;
-  font-size: 1.2rem;
-  font-weight: 800;
-}
+
 
 .titulo {
   color: #000000;
@@ -106,7 +99,7 @@ body {
 
 .exercicios::-webkit-scrollbar-thumb {
   background-color: #000000;            
-  border: 3px solid rgb(201, 201, 201); 
+  border: 10px solid rgb(201, 201, 201); 
 } 
 
 .exercicios h1 {

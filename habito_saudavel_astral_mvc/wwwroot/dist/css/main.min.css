@@ -71,7 +71,10 @@ p span {
 
 img {
     max-width: 100%;
-    background-size: cover
+    background-size: cover;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
 }
 
 .bg-red {
