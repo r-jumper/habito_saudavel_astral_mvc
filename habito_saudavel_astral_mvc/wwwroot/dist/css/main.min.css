@@ -4784,7 +4784,7 @@ ul.container-response li:last-child a {
 
 #alimente-se-bem .title p {
     font-size: 20px;
-    color: #343434
+    color: #fff;
 }
 
 @media (max-width:780px) {
@@ -5078,7 +5078,8 @@ ul.container-response li:last-child a {
 
 #alimente-se-bem .category-recipes-list li p {
     font-size: 20px;
-    color: #343434;
+    color: #fff;
+    
     margin-top: 10px;
     margin-bottom: 20px
 }
