@@ -77,6 +77,7 @@ img {
     height: 100px
 }
 
+
 .bg-red {
     background-color: #e2211c
 }
@@ -5743,11 +5744,13 @@ ul.container-response li:last-child a {
 }
 
     #alimente-se-bem .img-kachimeshi .img-main {
+        max-width: 100%;
+        background-size: cover;
         z-index: 1;
         position: relative;
         border-radius: 0;
         width: 0;
-        height: 0;
+        height: 0
     }
 
 @media (max-width:780px) {
