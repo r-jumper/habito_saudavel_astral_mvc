@@ -4,24 +4,11 @@ button {
   cursor: pointer;
 }
 
-body {
-
-    margin: 0;
-    padding: 0;
-    font-family: 'Orienta';
-    /*background-image: url(../img/como-comecar-academia.png);
-    background-size: cover;
-    background-repeat: no-repeat;*/
-}
-
-
-
-
 .titulo {
   color: #000000;
   width: fit-content;
   font-weight: 500;
-  text-align: start;
+  text-align: start
 }
 
 
@@ -34,24 +21,26 @@ body {
     margin-top: 3%;
     width: 60%;
     height: 600px;
-    flex-direction: column;
+    flex-direction: column
 }
 
 .tela02 .exercicios {
     display: flex;
-    /*background-color: #1E1E1E90;*/ color: white;
+    /*background-color: #1E1E1E90;*/ 
+    color: white;
     align-items: center;
     margin-left: 30%;
     margin-top: 3%;
     width: 60%;
     height: 600px;
     flex-direction: column;
-    overflow-y: scroll;
+    overflow-y: scroll
 }
 
 .tela03 .exercicios {
     display: flex;
-    /*background-color: #1E1E1E90;*/ color: white;
+    /*background-color: #1E1E1E90;*/ 
+    color: white;
     align-items: center;
     margin-left: 30%;
     margin-top: 3%;
@@ -63,7 +52,8 @@ body {
 
 .tela04 .exercicios {
     display: flex;
-    /*background-color: #1E1E1E90;*/ color: white;
+    /*background-color: #1E1E1E90;*/ 
+    color: white;
     align-items: center;
     margin-left: 30%;
     margin-top: 3%;
@@ -75,7 +65,8 @@ body {
 
 .tela05 .exercicios {
     display: flex;
-    /*background-color: #1E1E1E90;*/ color: white;
+    /*background-color: #1E1E1E90;*/ 
+    color: white;
     align-items: center;
     margin-left: 30%;
     margin-top: 3%;
