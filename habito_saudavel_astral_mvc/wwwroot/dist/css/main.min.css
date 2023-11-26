@@ -72,10 +72,11 @@ p span {
 img {
     max-width: 100%;
     background-size: cover;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     /*width: 100px;*/
-    height: 100px
+    /* height: 100px; */
 }
+
 
 .bg-red {
     background-color: #e2211c
@@ -5050,7 +5051,10 @@ ul.container-response li:last-child a {
 
 #alimente-se-bem .category-recipes-list li figure {
     border-radius: 20px;
-    overflow: hidden
+    overflow: hidden;
+    border-radius:50%; 
+    width: 200px;
+    height: 100px; 
 }
 
 #alimente-se-bem .category-recipes-list li h2 {
@@ -5742,13 +5746,13 @@ ul.container-response li:last-child a {
     overflow: hidden
 }
 
-    #alimente-se-bem .img-kachimeshi .img-main {
-        z-index: 1;
-        position: relative;
-        border-radius: 0;
-        width: 0;
-        height: 0;
-    }
+#alimente-se-bem .img-kachimeshi .img-main {
+    max-width: 100%;
+    background-size: cover;
+    z-index: 1;
+    position: relative
+    
+}
 
 @media (max-width:780px) {
     #alimente-se-bem .img-kachimeshi .only-desk {
